@@ -1,0 +1,6 @@
+@import '../app.scss', '../login','../variables';
+
+body{
+    background: var(--login);
+    height: 100vh;
+}
