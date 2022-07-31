@@ -1,6 +1,4 @@
 {
-    "/module_login/js/app.js": "/module_login/js/app.js",
-    "/module_register/js/app.js": "/module_register/js/app.js",
-    "/module_register/css/app.css": "/module_register/css/app.css",
-    "/module_login/css/app.css": "/module_login/css/app.css"
+    "/module_catalogo/js/app.js": "/module_catalogo/js/app.js",
+    "/module_catalogo/css/app.css": "/module_catalogo/css/app.css"
 }

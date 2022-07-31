@@ -38,7 +38,9 @@ services:
     working_dir: /var/www/html
     volumes: 
       - ./src:/var/www/html
-    
+    networks:
+      - laravel
+      
   php:
     build:
       args:
@@ -49,6 +51,7 @@ services:
     container_name: briefcase-php
     volumes:
       - ./src:/var/www/html
+      - ./conf/php.ini:/usr/local/etc/php/php.ini
     ports:
       - 9000:9000
     networks:

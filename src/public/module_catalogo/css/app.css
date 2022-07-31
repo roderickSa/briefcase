@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+:root {
+  --rojoa: #D9303E;
+  --rojob: #D9304F;
+  --crema: #F2DA63;
+  --marron: #8C7345;
+  --gris: #BFB8AE;
+  --verdea: #558C03;
+  --login: linear-gradient(120deg, #2980b9, #8e44ad);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--marron);
+  border-radius: 5rem;
+}
+
+html {
+  font-size: 90%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--crema);
+  overflow: hidden;
+}
+
+input[type=text],
+textarea,
+select {
+  height: 2rem;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.5);
+  border-radius: 0.2rem;
+}
+
+textarea {
+  height: 5rem;
+  resize: none;
+}
+
+button {
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--gris);
+  margin: 0 0.1rem;
+}
+
+a {
+  cursor: pointer;
+  color: #0064c9;
+}
+
+.header {
+  background: var(--rojob);
+}
+
+.dnone {
+  display: none;
+}

@@ -13,8 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return json_encode(['message' => 'hello roderick']);
+// Route::get('/info', function () {
+//     phpinfo();
+//     return;
 // });
 
 Route::group(
@@ -30,4 +31,16 @@ Route::post('/register', [\App\Http\Controllers\auth\AuthController::class, 'sav
 //home
 Route::group(['middleware' => 'auth', 'namespace' => '\App\Http\Controllers\home'], function () {
     Route::get('/', 'HomeController@index')->name('home.index');
+});
+
+//catalogo
+Route::group(['middleware' => 'auth', 'namespace' => '\App\Http\Controllers\catalogo'], function () {
+    Route::get('/catalogo', 'CatalogoController@index')->name('catalogo.index');
+    Route::post('/catalogo/resources-catalogo', 'CatalogoController@resources_catalogo');
+    Route::post('/catalogo/listar-catalogo', 'CatalogoController@listar_productos');
+    Route::post('/catalogo/verificar-sku-catalogo', 'CatalogoController@verificar_sku');
+    Route::post('/catalogo/crear-producto-catalogo', 'CatalogoController@nuevo_producto');
+    Route::post('/catalogo/editar-producto-catalogo', 'CatalogoController@editar_producto');
+    Route::post('/catalogo/editar-imagen-producto-catalogo', 'CatalogoController@editar_imagen_producto');
+    Route::post('/catalogo/listar-detalle-catalogo', 'CatalogoController@detalle_producto');
 });
