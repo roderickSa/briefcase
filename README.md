@@ -16,3 +16,8 @@ To up this project with docker, run next commands in project route:
 3. `docker-compose exec app php artisan key:generate`
 4. `docker-compose exec php composer install`
 5. `docker-compose run node npm install`
+
+- catalogo module
+
+![alt text](https://raw.githubusercontent.com/roderickSa/briefcase/main/src/public/images/captures/catalogo_1.png)
+![alt text](https://raw.githubusercontent.com/roderickSa/briefcase/main/src/public/images/captures/catalogo_2.png)
